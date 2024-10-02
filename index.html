@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #f9f9fb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+   
+  }
+/* Navbar */
+nav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    top: -1px;
+    position: sticky;
+  }
+  nav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 1px 50px;
+    text-decoration: none;
+    font-size: 17px;
+    /* margin-top: 1%; */
+    /* position: fixed; */
+  }
+
+  nav .nav1{
+    /* top: 3%; */
+    margin-top: 3%;
+    position: sticky;
+  }
+
+  nav a:hover {
+    background-color: #df6e6e;
+    color: rgb(253, 252, 252);
+    /* border-radius: 55%; */
+  }
+
+  .logo img {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: -30% 0%;
+    background-color: black;
+  }
+
+  /* banner */
+
+  .banner1 {
+    position: relative;
+    width: 1000px;
+    /* height: 1000px; */
+    height: auto;
+  }
+  
+  /* Make the image responsive */
+  .banner1 img {
+    width: 1528px;
+    height: 450px;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .banner1 .btn1 {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-27%, -21%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f6f3f3;
+    color: rgb(12, 12, 12);
+    font-size: 17px;
+    padding: 14px 36px;
+    border: 4%;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .banner1 .btn1:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+  }
+
+  .banner1 .btn2 {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(195%, -21%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f6f3f3;
+    color: rgb(12, 12, 12);
+    font-size: 17px;
+    padding: 14px 36px;
+    border: 4%;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  .banner1 .btn2:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+  }
+
+  .text1 h1{
+    text-align: center;
+    color: rgb(19, 18, 18);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: -38px;
+   
+   }
+   
+   .text1 p{
+     text-align: center;
+     color: black;
+     font-size: 25px;
+     font-weight: normal;
+     font-family: 'Times New Roman', Times, serif;
+     margin-top: 70px;
+     margin-left: 70px;
+     margin-right: 70px;
+     margin-bottom: 70px;
+   }
+
+   /* 2 images */
+   .boxes{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    
+  }
+  .box1{
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .box1 img{
+    width:  60%;
+    margin-left: 32%;
+    border-radius: 5%;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .boxes .box1 img:hover{
+    opacity: 0.6
+  }
+ 
+  .box2{
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .box2 img{
+    width:  60%;
+    height: 301px;
+    margin-right: 19%;
+    margin-left: 11%;
+    border-radius: 5%;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .boxes .box2 img:hover{
+    opacity: 0.6
+  }
+  
+  .box1 h1{
+    text-align: center;
+    color: black;
+    font-size: 38px;
+    font-weight: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 38px;
+    margin-left: 112px;
+  }
+  .box1 p{
+    text-align: center;
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 44px;
+    margin-left: 70px
+  }
+  
+  .box2 h1{
+    text-align: center;
+    color: black;
+    font-size: 38px;
+    font-weight: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 38px;
+    margin-left: -93PX;
+  
+  }
+  
+  .box2 p{
+    text-align: center;
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 44px;
+    margin-left: 50px
+  }
+  
+  .box1 .btn1 {
+    position: absolute;
+    top: 180%;
+    left: 25%;
+    transform: translate(-27%, -21%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f6f3f3;
+    color: rgb(12, 12, 12);
+    font-size: 17px;
+    padding: 14px 36px;
+    border: 4%;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .box1 .btn1:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+  }
+  .box2 .btn2 {
+    position: absolute;
+    top: 180%;
+    left: 70%;
+    transform: translate(-27%, -21%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f6f3f3;
+    color: rgb(12, 12, 12);
+    font-size: 17px;
+    padding: 14px 36px;
+    border: 4%;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+
+  .box2 .btn2:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+  }
+  /* banner2  */
+  /* image1 */
+
+  .container1 {
+    margin-top: 3%;
+    height: 70vh;
+  }
+  /* Second container */
+   .container_image1 {
+    /* Grab a free image from unsplash */
+    /* margin-top: 5%; */
+    background-image: url(img8.jpg);
+    background-size: 100vw auto;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .container1 h3{
+  
+    text-align: center;
+   color: rgb(19, 18, 18);
+   font-size: 35px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: -25px;
+   margin-left: 70px;
+   margin-right: 70px;
+   margin-bottom: 70px;
+   padding-top: 10%;
+  }
+  
+  .container1 p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    /* font-weight: normal; */
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 70px;
+    margin-left: 405px;
+    margin-right: 370px;
+    line-height: 50px;
+    margin-bottom: 70px;
+  }
+
+  .container1 marquee{
+    margin-top:-40px;
+  }
+  
+  .container1 marquee .img3{
+    margin-top: 0%;
+    margin-left: 5%;
+    width: 200px;
+  }
+  
+  .container1 .img{
+    margin-top: 0%;
+  }
+  .container1 .img1{
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+  .container1 .img2{
+    margin-top: -49px;
+    margin-left: 399px;
+  
+  }
+  
+  
+
+  /* image2 */
+
+  .container2 {
+    margin-top: 3%;
+    height: 80vh;
+  }
+  /* Second container */
+   .container_image2 {
+    background-image: url(img13.jpg);
+    background-size: 100vw auto;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .container2 h3{
+  
+    text-align: center;
+   color: rgb(19, 18, 18);
+   font-size: 35px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: -53px;
+   margin-left: 70px;
+   margin-right: 70px;
+   margin-bottom: 70px;
+   padding-top: 10%;
+  }
+  
+  .container2 p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 70px;
+    margin-left: 405px;
+    margin-right: 370px;
+    line-height: 50px;
+    margin-bottom: 70px;
+  }
+  
+  .container2 marquee{
+    margin-top:-40px;
+  }
+  
+  .container2 marquee .img3{
+    margin-top: 0%;
+    margin-left: 5%;
+    width: 200px;
+  }
+  
+  .container2 .img{
+    margin-top: 30%;
+  }
+  .container2 .img1{
+    padding-top: 0%;
+  }
+  .container2 .img2{
+    margin-top: -49px;
+    margin-left: 399px;
+  
+  }
+  /* image3 */
+
+  .container3 {
+    margin-top: 3%;
+    height: 80vh;
+  }
+  /* Second container */
+   .container_image3 {
+    background-image: url(img9.jpg);
+    background-size: 100vw auto;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .container3 h3{
+  
+    text-align: left;
+   color: rgb(255, 254, 254);
+   font-size: 35px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: -53px;
+   margin-left: 10%;
+   margin-bottom: 70px;
+   padding-top: 10%;
+  }
+  
+  .container3 p{
+    text-align: left;
+    color: rgb(249, 246, 246);
+    font-size: 20px;
+    font-weight: 700;
+    /* font-weight: normal; */
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 70px;
+    margin-left: 73px;
+    margin-right: 50%;
+    line-height: 50px;
+    margin-bottom: 70px;
+  }
+  
+  .container3 .btn1{
+    position: absolute;
+    top:  408%;
+    left: 8%;
+    transform: translate(-27%, -21%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f6f3f3;
+    color: rgb(12, 12, 12);
+    font-size: 17px;
+    padding: 14px 36px;
+    border: 4%;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .container3 .btn1:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+  }
+  .container3 .btn2{
+    position: absolute;
+    top:  408%;
+    left: 20%;
+    transform: translate(-27%, -21%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f6f3f3;
+    color: rgb(12, 12, 12);
+    font-size: 17px;
+    padding: 14px 36px;
+    border: 4%;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+
+  .container3 .btn2:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+  }
+ 
+  /* footer */
+
+  footer{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+
+  footer .strong{
+    margin-top: 10px;
+    font-size: 17%;
+
+  }
+
+ 
+
+
+
+    </style>
+
+</head>
+<body>
+    
+ <!-- Navbar -->
+ <nav>
+    <div class="nav1">
+  <a href="#about-us">OUR SERVICES </a>
+  <a href="#department">OUR MISSION</a>
+  <a href="#faculty">OUR PROMISE</a>
+</div>
+  
+  <div class="logo">
+    <a href="#" class="logo"> <img src="logo.jpg" alt="" /> </a>
+  </div>
+
+ <div class="nav2">
+  <a href="#Research">EXPERIENCE</a>
+  <a href="#placement">MAKE A BOOKING</a>
+  <a href="#contact">CONTACT</a>
+</div>
+  </nav>
+
+  <!-- bannner1 -->
+  <div class="banner1">
+    <img src="img1.jpg" alt="Snow">
+    <button class="btn1">CALL NOW</button>
+    <button class="btn2">EMAIL NOW</button>
+  </div>
+
+  <div class="text1">
+  <h1 class="heading-1">WELCOME TO PEOPLE VS COFFEE</h1>
+  <p class="paragraph">A pop-up espresso cafe offering an amazing coffee experience and friendly baristas in the slickest locations around the Barossa, Adelaide, and surrounding locations. We are available for weddings, private and corporate events, sporting gatherings, festivals, and local markets.</p>
+</div>
+
+<!-- 2images -->
+<div class="boxes">
+    <div class="box1">
+        <img src="img2.jpg" alt="Coffee">
+        <div>
+          <h1 class="heading-2">POP-UP CAFE</h1>
+          <p class="paragraph">
+          Our coffee van event servers will create an authentic experience and ensure your guests will be well caffeinated and full of delicious treats. Services include cafe services, fully trained baristas, and a divine offering of croissants and pastries
+        </p>
+        <button class="btn1">BOOK NOW</button>
+        </div>
+    </div>
+    
+    <div class="box2">
+        <img src="img14.jpg" alt="Berry">
+        <h1 class="heading-2">ESPRESSO BAR</h1>
+        <p class="paragraph">
+        Our Espresso bar is an unforgettable experience offering espresso martinis, champagne, and other cocktails as required. Our fully trained bar staff will ensure your guests are ready to celebrate well into the evening.
+    </p>
+    <button class="btn2">BOOK NOW</button>
+      </div>
+    </div>
+
+    <!-- banner2 -->
+
+    <header1>
+
+        <div class="container1 container_image1">
+          <div class="title_wrapper">
+            <h3>WE KEEP IT LOCAL &amp; SUSTAINABLE</h3>
+            <p class="paragraph">We want you to enjoy your coffee experience with us. For this reason, we source the finest local ingredients, from our locally roasted beans by Bean Addiction to our milk produced by Jersey Fresh. All our offerings are served in sustainable packaging to ensure we don't leave a footprint behind. We pop-up and pop-out cleanly.</p>
+
+            <div class="img1">
+              <img class="img1" src="img11.png" alt="">
+            </div>
+            <div class="img2">
+              <img class="img2" src="img10.png" alt="">
+            </div>
+              <marquee class="img3" behavior="" direction="right">          
+                <img src="img121.png"    alt="logo"> 
+            </marquee> 
+          </div>
+        </div>
+      </header1>
+
+      <header2>
+
+        <div class="container2 container_image2">
+          <div class="title_wrapper">
+            <h3>OUR PROMISE TO GIVE</h3>
+            <p>
+              <strong>We guarantee:</strong> You'll love it or your money back!<strong><br>&zwj;</strong>We love living and working in the Barossa Valley and want to give back to the community.
+            </p>
+
+            <div class="img1">
+              <img class="img1" src="img11.png" alt="">
+            </div>
+            <div class="img2">
+              <img class="img2" src="img10.png" alt="">
+            </div>
+              <marquee class="img3" behavior="" direction="left">          
+                <img src="img122.png"    alt="logo"> 
+            </marquee> 
+
+          </div>
+        </div>
+      </header2>
+
+      <header3>
+
+        <div class="container3 container_image3">
+          <div class="title_wrapper">
+            <h3>THE BLACK BEAUTY EXPERIENCE</h3>
+            <p class="paragraph">We want you to enjoy your coffee experience with us. For this reason, we source the finest local ingredients, from our locally roasted beans by Bean Addiction to our milk produced by Jersey Fresh. All our offerings are served in sustainable packaging to ensure we don't leave a footprint behind. We pop-up and pop-out cleanly.</p>
+            <button class="btn1">CALL NOW</button>
+            <button class="btn2">EMAIL NOW</button>
+          </div>
+        </div>
+      </header3>
+
+<footer>
+  <div class="top">
+    <strong>Back to top</strong>
+  </div>
+</footer>
+
+</body>
+</html>
